@@ -1,0 +1,42 @@
+@import "_vars";
+@import "_mixins";
+@import "reset";
+
+body {
+    background-color: $black;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: $white;
+}
+
+h2 {
+    font-size: 48px;
+    line-height: 1.4;
+    color: $white;
+    font-weight: 700;
+}
+
+
+@import "blocks/page";
+@import "blocks/container";
+@import "blocks/section";
+@import "blocks/header";
+@import "blocks/nav";
+@import "blocks/mobile-nav";
+@import "blocks/burger";
+@import "blocks/btn";
+@import "blocks/main";
+@import "blocks/clock";
+@import "blocks/stat";
+@import "blocks/about";
+@import "blocks/start";
+@import "blocks/graphic";
+@import "blocks/advantages";
+@import "blocks/partners";
+@import "blocks/program";
+@import "blocks/teachers";
+@import "blocks/footer";
+@import "blocks/form";
+@import "blocks/social";

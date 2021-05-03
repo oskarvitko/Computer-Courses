@@ -1,0 +1,61 @@
+.graphic {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.graphic__item {
+    width: 25%;
+
+    @include breakpoint($tablet-bp) {
+        width: 50%;
+    }
+}
+
+.graphic__percent {
+    margin-bottom: 20px;
+
+    font-size: 36px;
+    font-weight: 700;
+    color: $white;
+    line-height: 1.4;
+
+    @include breakpoint($laptop-bp) {
+        margin-bottom: 10px;
+    }
+}
+
+.graphic__progress {
+    width: 100%;
+    height: 80px;
+    margin-bottom: 35px;
+
+    position: relative;
+
+    img {
+        width: 100%;
+        height: auto;
+
+        position: absolute;
+        top: 50%;
+        left: 0;
+        z-index: 1;
+
+        transform: translateY(-50%);
+    }
+
+    @include breakpoint($laptop-bp) {
+        margin-bottom: 10px;
+    }
+}
+
+.graphic__text {
+    padding-right: 40px;
+
+    font-size: 14px;
+    line-height: 1.6;
+    color: rgba($white, .5);
+
+    @include breakpoint($laptop-bp) {
+        padding-right: 20px;
+    }
+}

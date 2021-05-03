@@ -1,0 +1,42 @@
+.start__header {
+    position: relative;
+    width: 486px;
+    margin-bottom: 53px;
+}
+
+.start__ico {
+    position: absolute;
+    top: 0px;
+    left: 12px;
+    z-index: 1;
+
+    transform: rotate(45deg);
+
+    @include breakpoint($mobile-bp) {
+        left: 5px;
+        width: 60px;
+    }
+}
+
+.start__title {
+    padding-left: 128px;
+    margin-bottom: 49px;
+
+    @include breakpoint($mobile-bp) {
+        padding-left: 70px;
+        margin-bottom: 30px;
+
+        font-size: 26px;
+    }
+}
+
+.start__subtitle {
+    font-size: 16px;
+    line-height: 1.6;
+    color: rgba($white, .5);
+
+    @include breakpoint($mobile-bp) {
+        display: block;
+        width: auto;
+    }
+}

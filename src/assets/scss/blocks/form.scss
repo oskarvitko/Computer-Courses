@@ -1,0 +1,40 @@
+.form {
+    margin-bottom: 30px;
+}
+
+.form__group {
+    padding-left: 60px;
+    text-align-last: left;
+    width: 492px;
+
+    position: relative;
+}
+
+.form__input {
+    padding: 11px 40px 11px 30px;
+
+    width: 360px;
+
+    font-size: 14px;
+    color: $white;
+    line-height: 1.6;
+
+    border-radius: 50px;
+    background-color: rgba($white, .25);
+
+    &::placeholder {
+        font-size: 14px;
+        line-height: 1.6;
+        color: rgba($white, .8);
+    }
+}
+
+.form__btn {
+    height: 44px;
+
+
+    position: absolute;
+    top: 0;
+    right: -50px;
+    z-index: 1;
+}

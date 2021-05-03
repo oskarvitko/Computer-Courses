@@ -1,0 +1,33 @@
+.nav {
+    @include breakpoint($laptop-bp) {
+        display: none;
+    }
+}
+
+.nav__list {
+    display: flex;
+}
+
+.nav__link {
+    margin-left: 56px;
+
+    font-size: 16px;
+    color: $white;
+
+    transition: color .2s linear;
+    a {
+        color: inherit;
+    }
+
+    &:first-child {
+        margin-left: 0;
+    }
+
+    &:hover {
+        color: #7C6AFA;
+    }
+
+    @include breakpoint($desktop-bp) {
+        margin-left: 30px;
+    }
+}

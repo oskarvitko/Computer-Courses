@@ -1,0 +1,49 @@
+.clock {
+    display: flex;
+
+
+    @include breakpoint($mobile-bp) {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+
+.clock__item {
+    margin-right: 30px;
+
+    line-height: 1.4;
+    text-align: center;
+
+    background-color: $gray;
+
+    @include breakpoint($mobile-bp) {
+        margin-top: 20px;
+        margin-right: 0;
+    }
+}
+
+.clock__number {
+    padding: 22px 30px 0;
+
+    font-size: 36px;
+    font-weight: 700;
+
+    @include breakpoint($mobile-bp) {
+        padding: 35px 35px 0;
+
+        font-size: 50px;
+    }
+}
+
+.clock__unit {
+    padding-bottom: 20px;
+
+    font-size: 16px;
+    color: rgba($white, .4);
+
+    @include breakpoint($mobile-bp) {
+        padding-bottom: 35px;
+
+        font-size: 22px;
+    }
+}

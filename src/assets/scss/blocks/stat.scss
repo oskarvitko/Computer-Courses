@@ -1,0 +1,95 @@
+.stat {
+    display: flex;
+    justify-content: space-between;
+    max-height: 100%;
+    width: 80.7%;
+
+    font-size: 16px;
+    line-height: 1.5;
+    color: rgba($white, .4);
+
+    @include breakpoint($laptop-bp) {
+        flex-direction: column;
+        width: 100%;
+
+        font-size: 20px;
+    }
+
+    @include breakpoint($mobile-bp) {
+        font-size: 18px;
+    }
+}
+
+.stat__left {
+    width: 22%;
+    min-width: 250px;
+    margin-right: 20px;
+
+    @include breakpoint($laptop-bp) {
+        width: 60%;
+    }
+
+    @include breakpoint($tablet-bp) {
+        width: 100%;
+    }
+}
+
+.stat__left-item {
+    padding: 5px 0;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.stat__left-value,
+.stat__right-value {
+    color: $white;
+    font-weight: 700;
+}
+
+.stat__right {
+    width: 70%;
+
+    @include breakpoint($laptop-bp) {
+        width: 100%;
+    }
+}
+
+.stat__right-item {
+    display: flex;
+    justify-content: space-between;
+    width: 280px;
+    padding: 5px 0 14px;
+
+    @include breakpoint($laptop-bp) {
+        width: 60%;
+    }
+
+    @include breakpoint($tablet-bp) {
+        width: 100%;
+    }
+}
+
+.stat__progress {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+
+    border-top: 6px solid $white;
+
+    position: relative;
+
+    &:before {
+        content: "";
+        display: block;
+        width: 59%;
+        height: 6px;
+
+        background: linear-gradient(-45deg, #451046, #DF5950);
+
+        position: absolute;
+        top: -6px;
+        left: 0;
+        z-index: 1;
+    }
+}

@@ -1,0 +1,33 @@
+.mobile-nav {
+    display: none;
+    width: 100%;
+
+    background-color: #121212;
+
+    transform: translateY(-500px);
+
+    transition: transform .7s ease-in-out;
+
+    &.active {
+        display: block;
+
+        transform: translateY(0px);
+    }
+}
+
+.mobile-nav__list {
+    padding-bottom: 10px;
+}
+
+.mobile-nav__link {
+    padding: 10px 10px;
+
+    font-size: 22px;
+    color: $white;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    a {
+        color: inherit;
+    }
+}
